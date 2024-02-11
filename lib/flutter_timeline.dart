@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_timeline/data/icon_and_image_style.dart';
-import 'package:flutter_timeline/data/line_style.dart';
-import 'package:flutter_timeline/paint/line_draw_horizantal.dart';
-import 'package:flutter_timeline/paint/line_draw_vertical.dart';
+import 'package:katro_timeline/data/icon_and_image_style.dart';
+import 'package:katro_timeline/data/line_style.dart';
+import 'package:katro_timeline/paint/line_draw_horizantal.dart';
+import 'package:katro_timeline/paint/line_draw_vertical.dart';
 
 import 'data/enum/type_time_line.dart';
 import 'data/time_line_item.dart';
@@ -189,11 +189,11 @@ class _TimeLineItemHorizontalState extends State<_TimeLineItemHorizontal> {
   @override
   Widget build(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      RenderObject renderBox = key.currentContext!.findRenderObject()!;
+      widget.itemSizeChange(renderBox.paintBounds.size);
       if (widget.width == null && width == null) {
-        RenderObject renderBox = key.currentContext!.findRenderObject()!;
-        widget.itemSizeChange(renderBox.paintBounds.size);
         setState(() {
-          width = renderBox.paintBounds.size.height;
+          width = renderBox.paintBounds.size.width;
         });
       }
       if (hightCircleAndText == null) {
@@ -312,12 +312,14 @@ class _TimeLineItemHorizontalState extends State<_TimeLineItemHorizontal> {
                     else
                       widget.endWidget ?? const SizedBox(),
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
                       key: circleAndFirstTextHightKey,
                       children: firstWidget,
                     ),
                   ]
                 : [
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
                       key: circleAndFirstTextHightKey,
                       children: firstWidget,
                     ),
@@ -385,12 +387,11 @@ class _TimeLineItemVerticalState extends State<_TimeLineItemVertical> {
   @override
   Widget build(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      RenderBox renderBox = key.currentContext!.findRenderObject() as RenderBox;
+      widget.itemSizeChange(renderBox.size);
       if (widget.height == null && height == null) {
-        RenderBox renderBox =
-            key.currentContext!.findRenderObject() as RenderBox;
         setState(() {
           height = renderBox.size.height;
-          widget.itemSizeChange(renderBox.size);
         });
       }
       if (widthCircleAndText == null) {

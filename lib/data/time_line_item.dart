@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_timeline/data/icon_and_image_style.dart';
-import 'package:flutter_timeline/data/line_style.dart';
+import 'package:katro_timeline/data/icon_and_image_style.dart';
+import 'package:katro_timeline/data/line_style.dart';
 
 class ItemLineItem {
   final LineStyle? afterLineStyle;

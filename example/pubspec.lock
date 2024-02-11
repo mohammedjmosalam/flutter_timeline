@@ -75,13 +75,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_timeline:
+  katro_timeline:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "1.0.0"
   line_icons:
     dependency: "direct main"
     description:

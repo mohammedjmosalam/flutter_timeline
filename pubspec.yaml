@@ -1,7 +1,8 @@
-name: flutter_timeline
-description: "Flutter time line"
-version: 0.0.1
-homepage: https://github.com/mohammedjmosalam/flutter_timeline
+name: katro_timeline
+description: "Flutter time line 2024"
+version: 1.0.0
+
+homepage: https://github.com/mohammedjmosalam/flutter_time_line
 
 environment:
   sdk: '>=3.0.0 <4.0.0'

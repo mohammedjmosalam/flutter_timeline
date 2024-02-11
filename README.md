@@ -4,11 +4,11 @@
 A Flutter package for all platform .
 
 
-![The example app ](https://github.com/mohammedjmosalam/flutter_timeline)
+![The example app ](https://github.com/mohammedjmosalam/flutter_time_line)
 
 ## Installation
 
-First, add `flutter_timeline` as a [dependency in your pubspec.yaml file](https://flutter.dev/using-packages/).
+First, add `flutter_time_line` as a [dependency in your pubspec.yaml file](https://flutter.dev/using-packages/).
 
 ## Screen Shot
 | ![horizontal-winding](https://i.ibb.co/HrdMtCq/screen-shot1.png) | 

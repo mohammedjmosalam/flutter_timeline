@@ -1,6 +1,6 @@
 import 'package:flutter/rendering.dart';
-import 'package:flutter_timeline/data/enum/type_time_line.dart';
-import 'package:flutter_timeline/data/line_style.dart';
+import 'package:katro_timeline/data/enum/type_time_line.dart';
+import 'package:katro_timeline/data/line_style.dart';
 
 class LineDrawVertical extends CustomPainter {
   final LineStyle beforeLineStyle;

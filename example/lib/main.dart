@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_timeline/data/enum/type_time_line.dart';
-import 'package:flutter_timeline/data/icon_and_image_style.dart';
-import 'package:flutter_timeline/data/line_style.dart';
-import 'package:flutter_timeline/data/time_line_item.dart';
-import 'package:flutter_timeline/flutter_timeline.dart';
+import 'package:katro_timeline/data/enum/type_time_line.dart';
+import 'package:katro_timeline/data/icon_and_image_style.dart';
+import 'package:katro_timeline/data/line_style.dart';
+import 'package:katro_timeline/data/time_line_item.dart';
+import 'package:katro_timeline/flutter_timeline.dart';
 import 'package:line_icons/line_icons.dart';
 
 void main() {
@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
           FlutterTimeLine(
             direction: Axis.vertical,
             typeTimeLine: TypeTimeLine.winding,
-            width: MediaQuery.sizeOf(context).width,
+            height: 500,
             itemsTimeLine: title
                 .map(
                   (e) => ItemLineItem(
@@ -122,10 +122,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(description.elementAt(title.indexOf(e))),
                     ),
+                    height: 80,
                     isFirst: title.indexOf(e) == 0,
                     isLast: title.indexOf(e) == title.length - 1,
                     icon: icons.elementAt(title.indexOf(e)),
-                    height: 100,
                     iconAndImageStyle: const IconAndImageStyle(
                       color: Colors.white,
                       size: 28,
