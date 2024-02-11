@@ -13,16 +13,16 @@ First, add `flutter_timeline` as a [dependency in your pubspec.yaml file](https:
 ## Screen Shot
 | ![horizontal-winding](https://i.ibb.co/HrdMtCq/screen-shot1.png) | 
 |:--:| 
-| *Space* |
+| *Horizontal Winding* |
 
 | ![horizontal-liner](https://i.ibb.co/SBjpgTx/screen-shot2.png) | 
 |:--:| 
-| *Space* |
+| *Horizontal  Liner* |
 
 | ![vertical-liner](https://i.ibb.co/sCNsqKp/screen-shot3.png) | 
 |:--:| 
-| *Space* |
+| *Vertical Liner* |
 
 | ![vertical-winding](https://i.ibb.co/HG844by/screen-shot4.png) | 
 |:--:| 
-| *Space* |
+| *Vertical Winding* |
